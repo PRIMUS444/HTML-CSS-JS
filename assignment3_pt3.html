@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment_3_pt3</title>
+</head>
+<body>
+    <style>
+        table{
+            border: solid 1px ;
+        }
+        .q1{
+            
+            empty-cells: hide;
+        }
+        .q3{
+            border-collapse: collapse;
+        }
+        #o3{
+            text-align: center;
+            width: 100mm;
+            height: 50mm;
+            color:white;
+            background-color: orange;
+            border-collapse: collapse;
+        }
+        #r3{
+            text-align: center;
+            width: 30mm;
+            color:white;
+            background-color: red;
+            border-collapse: collapse;
+        }
+        #g3{
+            width: 30mm;
+            text-align: center;
+            color:white;
+            border-collapse: collapse;
+            background-color: green;
+        }
+        #b3{
+            width: 100mm;
+            height: 30mm;
+            text-align: center;
+            color:white;
+            border-collapse: collapse;
+            background-color: blue;
+        }
+        #q4{
+            border: solid 2px ;
+            background: #76a029; 
+            border-collapse: collapse;
+            width :600px;
+        }
+        .lg{
+            border: solid 2px ;
+            background-color:rgb(229, 247, 179) ;
+            border-collapse: collapse;
+        }
+        .dg
+        {
+            border: solid 2px;
+            background-color: rgb(197, 233, 149);
+            border-collapse: collapse;
+        }
+        #q7{
+            border-collapse: collapse;
+            width: 600px;
+            height: 130px;
+        }
+        .ltb{
+            border: solid 1.5px;
+            background-color: rgb(253, 253, 253);
+        }
+        .lb{
+            border: solid 1.5px;
+            background-color: rgba(175, 231, 228, 0.664);
+                }
+        .db{
+            border: solid 1.5px;
+            background-color: rgba(99, 187, 183, 0.521);
+            border-collapse : collapse;
+        }
+
+        .q6{
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+        .f1{
+            border: solid 1px black;
+            background-color: red;
+            color: white;
+            text-align: center;
+        }
+        .f2{
+            border: solid 1px black;
+            background-color: blue;
+            color: white;
+            text-align: center;
+        }
+        .f3{
+            border: solid 1px black;
+            background-color: green;
+            color: white;
+            text-align: center;
+        }
+
+        
+    </style>
+   <h2>1.</h2>
+    <table class="q1" border="1">
+        <th>SUN</th>
+        <th>MON</th>
+        <th>TUE</th>
+        <th>WED</th>
+        <th>THU</th>
+        <th>FRI</th>
+        <th>Sat</th>
+        <tr>
+            <td colspan="3"></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <br>
+    <h2>2.</h2>
+    <table border=1 width=150 >
+        <td>A</td>
+        <td rowspan="2">B</td>
+        <td>D</td>
+        <td>E</td>
+        <tr>
+            <td>G</td>
+            <td colspan="2">H</td>
+            <td>I</td>
+        
+        </tr>
+    </table>
+    <br>
+    <h2>3. </h2>
+        <table class="q3">
+            <td class="q3" id="o3">orange</td>
+            <td class="q3" id="r3"rowspan="2">red</td>
+            <td class="q3" id="g3"rowspan="2">green</td>
+            <tr >
+            <td class="q3" id="b3" > Blue</td>
+            </tr>
+        </table>
+        <br>
+    <h2>4.</h2>
+    <table id="q4">
+        <tr>
+            <th colspan="6" style="color:white">STUDENTS MARK SHEET</th>
+        </tr>
+        <tr>
+            <td class="lg">Name</td>
+            <td class="dg">Maths</td>
+            <td class="lg">Science</td>
+            <td class="dg">English</td>
+            <td class="lg">Physics</td> 
+            <td class="dg">General Knowledge</td> 
+        </tr>
+        <tr>
+            <td class="lg">David</td>
+            <td class="dg">85</td>
+            <td class="lg">87</td>
+            <td class="dg">88</td>
+            <td class="lg">92</td> 
+            <td class="dg">88</td> 
+        </tr>
+        <tr>
+            <td class="lg">Richard</td>
+            <td class="dg">91</td>
+            <td class="lg">81</td>
+            <td class="dg">78</td>
+            <td class="lg">71</td> 
+            <td class="dg">74</td> 
+        </tr>
+        <tr>
+            <td class="lg">John</td>
+            <td class="dg">81</td>
+            <td class="lg">86</td>
+            <td class="dg">88</td>
+            <td class="lg">84</td> 
+            <td class="dg">92</td> 
+        </tr>
+        <tr>
+            <td class="lg">Tony</td>
+            <td class="dg">84</td>
+            <td class="lg">86</td>
+            <td class="dg">87</td>
+            <td class="lg">82</td> 
+            <td class="dg">81</td> 
+        </tr>
+        <tr>
+            <td class="lg">Scott</td>
+            <td class="dg">71</td>
+            <td class="lg">79</td>
+            <td class="dg">82</td>
+            <td class="lg">88</td> 
+            <td class="dg">89</td> 
+        </tr>       
+    </table>
+   <br>
+   <h2>5.</h2>
+   <pre><b>      Course          Year of Passing         Percentage</b></pre>
+   <hr width=450px align="left">
+   <pre><b>      10th                2012                    80</b></pre>
+   <hr width=450px align="left">
+   <pre><b>      12th                2014                    85</b></pre>
+   <hr width=450px align="left">
+   <pre><b>     B.tech               2018                    75</b></pre>
+   <hr width=450px align="left">
+   <pre><b>     M.tech               2020                    82</b></pre>
+   <hr width=450px align="left">
+   <pre><b>       PhD                2024                    65</b></pre>
+   <hr width=450px align="left">
+
+  <br>
+  <h2>6.</h2>
+  <table class="q6" width=400; height=250;>
+      <tr>
+          <th class="q6">roman</th>
+          <th class="q6" >roman</th>
+          <th class="q6">alphabets</th>
+          <th class="q6">a to z</th>
+      </tr>
+      <tr class="f1">
+        <td class="f1">omega</td>
+        <td class="f1">gama</td>
+        <td class="f1">alpha</td>
+        <td class="f1">beta</td>
+      </tr>
+      <tr class="f1">
+        <td class="f1">alpha</td>
+        <td class="f1">beta</td>
+        <td class="f1">omega</td>
+        <td class="f1">gama</td>
+    </tr>
+    <tr class="f2">
+      <td class="f2">omega</td>
+      <td class="f2">gama</td>
+      <td class="f2">alpha</td>
+      <td class="f2">beta</td>
+    </tr>
+    <tr class="f2">
+        <td class="f2">alpha</td>
+        <td class="f2">beta</td>
+        <td class="f2">omega</td>
+        <td class="f2">gama</td>
+    </tr>
+    <tr class="f2">
+      <td class="f2">omega</td>
+      <td class="f2">gama</td>
+      <td class="f2">alpha</td>
+      <td class="f2">beta</td>
+    </tr>
+    <tr class="f3">
+        <td class="f3">alpha</td>
+        <td class="f3">beta</td>
+        <td class="f3">omega</td>
+        <td class="f3">gama</td>
+    </tr>
+    <tr class="f3">
+      <td class="f3">omega</td>
+      <td class="f3">gama</td>
+      <td class="f3">alpha</td>
+      <td class="f3">beta</td>
+    </tr>
+  </table>
+
+  <br>
+  <h2>7.</h2>
+  <table id="q7">
+     <tr>
+        <th align="center" class="ltb">MON</th>
+        <th align="center" class="lb">TUE</th>
+        <th align="center" class="ltb">WED</th>
+        <th align="center" class="lb">THU</th>
+        <th align="center" class="ltb">FRI</th>
+    </tr>
+    <tr>
+        <td class="lb">Computer</td>
+        <td class="db">English</td>
+        <td class="lb">Maths</td>
+        <td class="db">Hindi</td>
+        <td class="lb">History</td>
+    </tr>
+    <tr>
+        <td class="ltb">English</td>
+        <td class="lb">Hindi</td>
+        <td class="ltb">Maths</td>
+        <td class="lb">History</td> 
+        <td class="ltb">Computer</td>
+    </tr>
+    <tr>
+        <td class="lb">History</td>
+        <td class="db">English</td>
+        <td class="lb">Computer</td>
+        <td class="db">Maths</td>
+        <td class="lb">Hindi</td>
+    </tr>
+    <tr>
+        <td class="ltb">Hindi</td>
+        <td class="lb">Maths</td>
+        <td class="ltb">English</td>
+        <td class="lb">History</td> 
+        <td class="ltb">Computer</td>
+    </tr>
+  </table>
+
+
+</body>
+</html>
