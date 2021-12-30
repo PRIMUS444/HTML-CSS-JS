@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+   <h2>Q1</h2>
+     <form class="q1form" >
+        <label for="q1name"> Name </label> 
+        <div>
+         <input type="text" name="q1name" id="q1name" placeholder="jhon wick" >
+      </div><br>
+      <label for="q1address">Address</label>
+      <div>
+         <input type="text" id="q1address" placeholder="address">
+      </div><br>
+      <label for="q1phone">Tel Number</label >
+      <div>
+         <input type="tel" id="q1phone" placeholder="+91 2827282222">
+      </div><br>
+   </form>
+   <div class="q1form">
+      <button onclick="displayq1()" > Add row</button>
+   </div>
+
+   <table id="q1table">
+      <tr>
+         <th>Name</th>
+         <th>Address</th>
+         <th>Tel number</th>
+      </tr>
+   </table>
+
+
+
+
+   <h2>Q2</h2>
+   <form class="q2form" >
+      <label for="q2name"> Name </label> 
+      <div>
+       <input type="text" name="q2name" id="q2name" placeholder="Ajay" >
+    </div><br>
+    <label for="q2age">Age</label>
+    <div>
+       <input type="number" name="q2age" id="q2age" >
+    </div>
+    </form><br>
+    <div class="q2form">
+       <button onclick="displayq2()">Submit</button>
+    </div>
+    <p id="q2row"></p>
+
+    
+   <h2>Q3</h2>
+   <form class="q3form" >
+      <label for="q3name"> Name </label> 
+      <div>
+       <input type="text" name="q3name" id="q3name" placeholder="Zeonn" >
+    </div><br>
+    <label for="q3age">Age</label>
+    <div>
+       <input type="number" name="q3age" id="q3age" >
+    </div>
+    <label for="q3nation">Nationality</label>
+    <div>
+      <select name="q3nation" id="q3nation" >
+         <option value="American">American</option>
+         <option value="British">British</option>
+         <option value="Europian">Europian</option>
+         <option value="Indian" selected>Indian</option>
+         <option value="japanese">Japanese</option>
+         <option value="Russuan">Russian</option>
+      </select>
+      </div><br>
+    </form>
+    <div class="q3form">
+       <button onclick="displayq3()">Check</button>
+    </div>
+    <p id="q3row"></p>
+    <table >
+       <tr>
+          <th>name</th>
+          <th>Age</th>
+          <th>Nationality</th>
+          <th>Eligibility</th>
+      </tr>
+    </table>
+    
+ <script src="script.js"></script>
+</body>
+</html>

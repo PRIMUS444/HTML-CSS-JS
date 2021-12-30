@@ -1,0 +1,39 @@
+labela{
+  float: left;
+  width: 50%;
+  text-align: right;
+
+}
+div,span{
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.ques{
+    border : grey solid 2px;
+    border-radius: 0.2cm;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-block-end: 20%;
+}
+fieldset{
+    border-radius: 0.2cm;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-block-end: 2%;
+    margin-block-start: 2%;
+
+}
+
+#q5{
+    border: black solid 2px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-block-end: 2%;
+    margin-block-start: 2%;
+
+}
+#subbt{
+    border: black solid 2px;
+}

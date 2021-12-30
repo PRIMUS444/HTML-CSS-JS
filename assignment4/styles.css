@@ -1,0 +1,28 @@
+#q1table,table{
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 50px;
+}
+th,tr,td{
+
+    border: 2px rgb(100, 185, 235) solid;
+
+
+}
+.q1form{
+    text-align: center;
+    
+}
+.q2form{
+    text-align: center;
+    
+}
+
+#q2answer{
+   margin-left: 25%;
+    text-align: center;
+    border-radius: 5cm;
+    width:50%;
+    border:grey solid 1px;
+}
