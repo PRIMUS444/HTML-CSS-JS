@@ -1,0 +1,8 @@
+fieldset{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#solidfig iframe{
+    border: solid black  ;
+}

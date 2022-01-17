@@ -1,0 +1,42 @@
+
+body{
+    max-width: 300px;
+    min-width: 300px;
+    padding: 10px;
+    font-family: cursive,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+#inputval{
+    border: green solid 2px;
+    padding: 4px 8px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 2px;
+    font-family: cursive,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+#inputbt{
+    background-color: green;
+    color:white;
+    margin-top:2px;
+    padding:5px 10px;
+    border-radius: 2px;
+    border:0;
+    font-family: cursive,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#ulist{
+    margin-top:10px;
+    padding: 2px;
+    list-style: none;
+}
+
+#ulist li{
+    margin-top:2px;
+    color: green;
+
+}
+#ulist li a{
+    color:green;
+    text-decoration: transparent;
+}

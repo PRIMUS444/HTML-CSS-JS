@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 8</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--    1.    -->
+    <fieldset class="ques">
+        <legend><h3>Square Root</h3></legend>
+        <div>
+            <label for="sqarinp">Enter a Number </label>
+            <div>
+                <input type="number" id="sqarinp" name="sqarinp">
+            </div>
+            <div>
+                <button onclick="findroot()">Find Square Root</button>
+                <p id="sqans"></p>
+            </div>
+        </div>
+    </fieldset>
+
+<!--    2.    -->
+    <fieldset class="ques">
+        <legend><h3>Area of <br><span style="color:red">Right Angled Triangle</span></h3></legend>
+        <div>
+            <label for="arlen">Enter length </label>
+            <div>
+                <input type="number" id="arlen" name="arlen">
+            </div>
+            <label for="arhig">Enter Height </label>
+            <div>
+                <input type="number" id="arhig" name="arhig">
+            </div>
+            <div>
+                <button onclick="areatri()">Find Area</button>
+                <p id="rtans"></p>
+            </div>
+        </div>
+    </fieldset>
+
+<!--    3.    -->
+    <fieldset class="ques">
+        <legend><h3>Check<br>Triangle</h3></legend>
+        <div>
+            <label for="s1">Enter 1st Side </label>
+            <div>
+                <input type="number" id="s1" name="s1" >
+            </div>
+            <label for="s2">Enter 2nd Side </label>
+            <div>
+                <input type="number" id="s2" name="s2" >
+            </div>
+            <label for="s3">Enter 3rd Side </label>
+            <div>
+                <input type="number" id="s3" name="s3" >
+            </div>
+            <div>
+                <button onclick="checktri()">Check</button>
+                <p id="trians"></p>
+            </div>
+        </div>
+    </fieldset>
+
+<!--    4.    -->
+    <fieldset class="ques">
+        <legend><h3>Swap Num</h3></legend>
+        <div>
+            <label for="n1">Enter 1st Number </label>
+            <div>
+                <input type="number" id="n1" name="n1">
+            </div>
+            <label for="n2">Enter 2nd Number </label>
+            <div>
+                <input type="number" id="n2" name="n2">
+            </div>
+            <div>
+                <button onclick="swapnum()">check</button>
+                <p id="numans"></p>
+            </div>
+        </div>
+    </fieldset>
+
+<!--    5.   -->
+    <fieldset class=ques>
+        <legend><h3>Random Number b/w<br>1 and 10</h3></legend>
+        <button onclick="rand()">Find</button>
+        <p id="randans"></p>
+    </fieldset>
+
+<!--    6.    -->
+    <fieldset class=ques>
+        <legend><h3>Prime Number b/w<br>1 and 100</h3></legend>
+        <button onclick="printprime()">Find</button>
+        <p id="primeans"></p>
+    </fieldset>
+
+<!--    7.    -->
+    <fieldset class=ques>
+        <legend><h3>Greatest of 3 Numbers</h3></legend>
+        <label for="gn1">Enter 1st Number </label>
+        <div>
+            <input type="number" id="gn1" name="gn1">
+        </div>
+        <label for="gn2">Enter 2nd Number </label>
+        <div>
+            <input type="number" id="gn2" name="gn2">
+        </div>
+        <label for="gn3">Enter 3rd Number </label>
+        <div>
+            <input type="number" id="gn3" name="gn3">
+        </div>
+        <div>
+            <button onclick="greatestofthree()">Find</button>
+            <p id="greatestofthreeans"></p>
+        </div>
+    </fieldset>
+
+<!--    8.    -->
+    <fieldset class=ques>
+        <legend><h3>Armstrong Number</h3></legend>
+        <label for="arnum">Enter Number </label>
+        <div>
+            <input type="number" id="arnum" name="arnum">
+        </div>
+        <div>
+            <button onclick="armnum()">Check <br>Number</button>
+            <p id=armnumans></p>
+        </div>
+    </fieldset>
+
+<!--    9.    -->
+    <fieldset class=ques>
+        <legend><h3>Same Last Digit</h3></legend>
+        <label for="sn1">Enter 1st Number </label>
+        <div>
+            <input type="number" id="sn1" name="sn1">
+        </div>
+        <label for="sn2">Enter 2nd Number </label>
+        <div>
+            <input type="number" id="sn2" name="sn2">
+        </div>
+        <label for="sn3">Enter 3rd Number </label>
+        <div>
+            <input type="number" id="sn3" name="sn3">
+        </div>
+        <div>
+            <button onclick="samelastdigit()">Check</button>
+            <p id="samelastdigitans"></p>
+        </div>
+    </fieldset>
+
+<!--   10,11.   -->    
+    <fieldset class=ques>
+        <legend><h3>Palindrome</h3></legend>
+        <label for="ps1">Enter String</label>
+        <div>
+            <input type="text" id="ps1" name="ps1">
+        </div>
+        <div>
+            <button onclick="palandromwith()">With<br> Built In </button>
+        </div>
+        <p id="palandromans1"></p>
+        <div>
+            <button onclick="palandromwithout()">Without<br> Built In</button>
+        </div>
+            <p id="palandromans2"></p>
+    </fieldset>
+
+<!--    12.    -->
+    <fieldset class=ques>
+        <legend><h3>Count Number of Same Character</h3></legend>
+        <label for="strtc">Enter String</label>
+        <div>
+            <input type="text" id="strtc" name="strtc">
+        </div>
+        <label for="chtc">Enter Character</label>
+        <div>
+            <input type="text" id="chtc" name="chtc">
+        </div>
+        <div>
+            <button onclick="countchar()">Count </button>
+        </div>
+            <p id="countcharans"></p>
+    </fieldset>
+
+<!--    13.    -->
+<fieldset class=ques>
+    <legend><h3>Check First and last Character</h3></legend>
+    <label for="strch">Enter String</label>
+    <div>
+        <input type="text" id="strch" name="strch">
+    </div>
+    <label for="chch">Enter Character</label>
+    <div>
+        <input type="text" id="chch" name="chch">
+    </div>
+    <div>
+        <button onclick="checkchar()">Check </button>
+    </div>
+        <p id="checkcharans"></p>
+</fieldset>
+
+<!--    14.    -->
+<fieldset class=ques>
+    <legend><h3>Check SubString</h3></legend>
+    <label for="strs">Enter String</label>
+    <div>
+        <input type="text" id="strs" name="strs">
+    </div>
+    <label for="substr">Enter Sub-String</label>
+    <div>
+        <input type="text" id="substr" name="substr">
+    </div>
+    <div>
+        <button onclick="checksubstr()">Check </button>
+    </div>
+        <p id="checksubstrans"></p>
+</fieldset>
+
+<!--    15.    -->
+
+
+<!--    16.    -->
+
+
+<!--    17.    -->
+
+
+<!--    18.    -->
+
+
+<!--    19.    -->
+
+
+
+<!--    20.    -->
+    <fieldset class=ques>
+        <legend><h3>Add New! to string</h3></legend>
+        <label for="ads">Enter String</label>
+        <div>
+            <input type="text" id="ads" name="ads">
+        </div>
+        <div>
+            <button onclick="addnew()">Add New! </button>
+        </div>
+            <p id="addnewans"></p>
+    </fieldset>
+
+     <script src="script.js"></script>
+</body>
+</html>
