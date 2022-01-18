@@ -267,49 +267,133 @@ function checksubstr()
 {
     let str=document.getElementById("strs").value;
     let substr=document.getElementById("substr").value; 
-    for(let i=0;i<str.length-1;i++)
+    let a=0;
+    for(let i=0;i<str.length;i++)
     {
         if(str[i]===substr[0])
         {
-            for(let j=0;j<substr.length-1;j++)
+            for(let j=0;j<substr.length;j++)
             {
-                if(str[j]===substr[j])
+                if(str[i+j]===substr[j])
                 {
-                    continue;
+                    a=0;
                 }
                 else
                 {
+                    a=1;
                     break;
                 }
             }
-            document.getElementById("checkcharans").textContent=("Yes Sub-String Present");
+            if(a==0){
+            document.getElementById("checksubstrans").textContent=("Yes Sub-String Present");
             return;
+            }
         }
     }
-    document.getElementById("checkcharans").textContent=("NO Sub-String NOT Present");
+    document.getElementById("checksubstrans").textContent=("NO Sub-String NOT Present");
 
 
         
 }
 
+//15.
+function capi()
+{
+   let str=document.getElementById("str15").value;
+   let temp="";
+   temp=str[0].toUpperCase();
+   for(let i=1;i<str.length;i++)
+   {
+       temp+=str[i];
+   }
+   document.getElementById("capians").innerHTML=("Changed string : "+temp);
+}
 
+//16.
+function printfibo()
+{
+   let lim=parseInt(document.getElementById("n16").value);
+   let a=0,b=1,c=0;
+   document.getElementById("printfiboans").textContent=("0 , 1");
+    while(1){
+     c=a+b;
+     if(c>lim){
+         return;
+     }
+     a=b;
+     b=c;
+     document.getElementById("printfiboans").textContent+=(", "+c);
 
+   }
+}
 
+//17.
+function replaceword()
+{
+   let str=document.getElementById("str17").value;
+   let input=document.getElementById("str17w").value;
+   let str2s=document.getElementById("str17w2").value;
+   let ot=0;
+   let temp="";
+   let j=1;
+   for(let i=0;i<str.length;i++)
+   { 
+       if(str[i]===str2s[0])
+       { 
+           ot=1;
+           for(j=0;j<str2s.length;j++)
+           {
+               if(str[i+j] !== str2s[j]){
+                ot=0;
+               }
+            }
+            if(ot==1){
+             j--;
+               temp+=input;
+              i=i+j;
+           }
+       }
+       else{
+           temp+=str[i];
+       }
+   }
+   document.getElementById("replacewordans").innerHTML=("Changed string : "+temp);
 
+}
 
+//18.
+function reverse()
+{
+   let str=document.getElementById("str18").value;
+   let temp="";
+   for(let i=str.length-1;i>=0;i--)
+   {
+       temp+=str[i]
+   }
+   document.getElementById("reverseans").innerHTML=("Changed string : "+temp);
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
+//19.
+function changechar()
+{
+   let str=document.getElementById("str19").value;
+   let chtr=document.getElementById("ch191").value;
+   let chtbr=document.getElementById("ch192").value;
+   let temp="";
+   for(let i=0;i<str.length;i++)
+   {
+       if(str[i]==chtbr[0])
+       {
+          temp+=chtr[0];
+       }
+       else{
+           temp+=str[i];
+       }
+   }
+   str=temp;
+   document.getElementById("changecharans").innerHTML=("Changed string : "+str);
+}
 
 //20.
 function addnew(){

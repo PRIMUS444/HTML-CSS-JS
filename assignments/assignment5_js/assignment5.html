@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="ques">
+<fieldset>
+    <legend>Greatest of Two</legend>
+        <form class="forms">
+            <label for="num1">Enter 1st Number </label>
+            <div>
+                <input type="number" id="num1" name="num1">
+            </div>
+            <br>
+            <label for="num2">Enter 2nd Number</label>
+            <div>
+                <input type="number" id="num2" name="num2">
+            </div><br>
+        </form>
+        <div class="forms">
+            <button id="q1bt" onclick=greatestoftwo()>Find Greatest</button>
+        </div>
+        <p class="forms" id="greatest"></p>
+    </fieldset>
+</div> 
+
+<div class="ques">
+<fieldset>
+    <legend>Grade Finder</legend>
+        <form class="forms">
+            <label for="persentage">Enter Persentage </label>
+            <div>
+                <input type="number" id="persentage" name="persentage">
+            </div>
+            <br>
+        </form>
+        <div class="forms">
+            <button id="q2bt" onclick=findgrade()>Find Grade</button>
+        </div>
+        <p class="forms" id="grade"></p>
+    </fieldset>
+</div>
+
+<div class="ques">
+<fieldset>
+    <legend>Day Selector</legend>
+        <form class="forms">
+            <label for="day">Enter Day </label>
+            <div>
+                <input type="number" id="day" name="day">
+            </div>
+            <br>
+        </form>
+        <div class="forms">
+            <button id="q4bt" onclick=findday()>Find Day</button>
+        </div>
+        <p class="forms" id="fday"></p>
+    </fieldset>
+</div>
+
+<div class="ques">
+<fieldset>
+    <legend>Discount Calculator</legend>
+        <form class="forms">
+            <label for="pamount">Enter Purchase amount </label>
+            <div>
+                <input type="number" id="pamount" name="pamount">
+            </div>
+            <br>
+        </form>
+        <div class="forms">
+            <button id="q3bt" onclick=findamt()>Find Total cost</button>
+        </div>
+        <p class="forms" id="netamt"></p>
+    </fieldset>
+</div>
+
+<div class="ques">    
+<fieldset>
+    <legend>Factorial Calculator</legend>
+        <form class="forms">
+            <label for="fact">Enter Number </label>
+            <div>
+                <input type="number" id="fact" name="fact">
+            </div>
+            <br>
+        </form>
+        <div class="forms">
+            <button id="q5bt" onclick=factorial()>Find Factorial</button>
+        </div>
+        <p class="forms" id="factor"></p>
+    </fieldset>
+</div>
+    
+
+<div class="ques">
+<fieldset>
+    <legend>Even Number <br>b/w 1 to 1000</legend>
+        <div class="forms">
+            <button id="q6bt" onclick=eveno()>Show</button>
+        </div>
+        <p class="forms" id="evennum"></p>
+    </fieldset>
+</div>
+    
+
+<div class="ques">
+<fieldset>
+    <legend>Sum of Numbers <br>b/w 1 to 20 incremented by 3</legend>
+        <div class="forms">
+            <button id="q7bt" onclick=sum1to20()>Show </button>
+        </div>
+        <p class="forms" id="sum1too20"></p>
+    </fieldset>
+</div>
+
+
+<div class="ques">
+<fieldset>
+    <legend> Odd Number<br> b/w 15 to 3 backwords</legend>
+        <div class="forms">
+            <button id="q8bt" onclick=odd15()>Show</button>
+        </div>
+        <p class="forms" id="odd15to3"></p>
+    </fieldset>
+</div>
+
+
+<div class="ques">
+<fieldset>
+    <legend>Tables from<br>1 to 10</legend>
+        <div class="forms">
+            <button id="q9bt" onclick=table1to10()>Show </button>
+        </div>
+        <p class="forms" id="table1too10"></p>
+    </fieldset>
+</div>
+
+<div class="ques">
+<fieldset>
+    <legend>Numbers Entered<br>is 100 of sum is 100</legend>
+
+        <form class="forms">
+            <label for="number1">Enter 1st Number</label>
+        <div>
+            <input type="number" id="number1">
+        </div><br>
+        <label for="number2">Enter 2nd Number</label>
+        <div>
+            <input type="number" id="number2">
+        </div><br>
+    </form>
+    <div class="forms">
+        <button id="q10bt" onclick=check100()>Check</button>
+    </div>
+    <p class="forms" id="checked100"></p>
+</fieldset>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

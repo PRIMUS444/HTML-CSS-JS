@@ -10,11 +10,7 @@ th,tr,td{
 
 
 }
-.q1form{
-    text-align: center;
-    
-}
-.q2form{
+.q1form,.q2form,.q3form{
     text-align: center;
     
 }
@@ -25,4 +21,11 @@ th,tr,td{
     border-radius: 5cm;
     width:50%;
     border:grey solid 1px;
+}
+
+.ques{
+    width: 700px;
+    border:black solid 1px;
+    margin:30px auto;
+    padding: 40px 10px;
 }
