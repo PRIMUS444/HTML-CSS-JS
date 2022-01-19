@@ -7,7 +7,7 @@ body{
     
 }
 #inputval{
-    border: green solid 2px;
+    border: rgb(111, 197, 111) solid 2px;
     padding: 4px 8px;
     width: 100%;
     box-sizing: border-box;
@@ -16,8 +16,8 @@ body{
 
 }
 
-#inputbt{
-    background-color: green;
+#inputbt,#inputtbbt{
+    background-color: rgb(111, 197, 111);
     color:white;
     margin-top:2px;
     padding:5px 10px;
