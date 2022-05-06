@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reaction Time Calculator</title>
+    <link rel="stylesheet" href="">
+    <style>
+  
+      #halfs{
+        display:grid;
+        grid-template-columns:60fr 30fr;
+      }
+  
+      #leftside{
+        border:1px solid black;
+        width:700px;
+        height:650px;
+        box-sizing: border-box;
+        grid-column:1/2;
+      }
+  
+      #rightside{
+        box-sizing: border-box;
+        border:1px solid black;
+        grid-column:2/3;
+      }
+  
+      li{
+        list-style-type:none;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1 style="text-Align : center ">Reaction Time Calculator</h1>
+    <ul id="halfs">
+      <li id="leftside">
+        <div id="yourtime" style="text-Align : center ">Last Resposne Time : </div>
+        <div id="shape" style="position: relative"></div>
+        </li>
+
+        <li id="rightside">
+          <div id="recordlist">Reaction Time List </div>
+          <div >Average Time : <span id="avgtime"></span></div>
+        </li>
+      </ul>
+
+      <script>
+        const d=new Date();
+        let start,end;
+        let time = document.querySelector("#yourtime");
+        let shape=document.querySelector("#shape");
+        let record=document.querySelector("#recordlist");
+        let avgtime=document.querySelector("#avgtime");
+        let colorcode,len;
+        let newdev=document.createElement("div")
+        let recordlist=[];
+        let avg=0;
+        changeshape();
+        function updatelist(){
+          avg=0;
+          record.innerHTML+="<div>"+recordlist[recordlist.length-1]+"</div>";
+          recordlist.map((e)=>{
+            avg+=e;
+          })
+          avg /=recordlist.length;
+          avgtime.textContent=avg;
+        }
+
+        function changeshape(){
+         start = new Date().getTime();
+         colorcode=Math.floor(Math.random()*1000);
+         len=Math.floor(Math.random()*100+40);
+         shape.style.width=len+"px";
+         shape.style.height=len+"px";
+         shape.style.border="2px solid black";
+         shape.style.borderRadius=colorcode/60+"px";
+         shape.style.background="#"+colorcode;
+         shape.style.top=Math.floor(Math.random()*350+50)+"px";
+         shape.style.left=Math.floor(Math.random()*400+50)+"px"; 
+        }
+
+        shape.addEventListener('click',(e)=>{
+          e.preventDefault();
+          end = new Date().getTime();
+          time.textContent="Response time :"+(end-start)/1000+" secs";
+          recordlist.push((end-start)/1000);
+          updatelist();
+          changeshape();//should be at the end of function as it overwrites start 
+        })
+
+      </script>
+</body>
+</html>
